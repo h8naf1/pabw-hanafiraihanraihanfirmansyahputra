@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,20 @@
   <link rel="stylesheet" href="komponen.css">
   <link rel="stylesheet" href="tema.css">
 </head>
+
 <body>
 
   <header>
-    <h1>Daftar Film yang Pernah Saya Tonton</h1>
-    <nav aria-label="Navigasi utama">
-      <ul>
-        <li><a href="#daftar-film">Daftar Film</a></li>
-        <li><a href="#tambah-film">Tambah Film</a></li>
-        <li><a href="#tentang-saya">Tentang Saya</a></li>
-      </ul>
-    </nav>
+    <div class="header-baris">
+      <h1>Daftar Film yang Pernah Saya Tonton</h1>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#daftar-film">Daftar Film</a></li>
+          <li><a href="#tambah-film">Tambah Film</a></li>
+          <li><a href="#tentang-saya">Tentang Saya</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -73,40 +77,35 @@
 
       <br>
 
-      <figure>
-        <img src="spiderman.png" 
-             alt="Poster film Spider-Man No Way Home memperlihatkan Spider-Man berlatar belakang retakan multiverse" 
-             width="640" height="360" loading="lazy">
-        <figcaption>Poster film Spider-Man: No Way Home (2021)</figcaption>
-      </figure>
+      <div class="katalog">
 
-      <figure>
-        <img src="habibie&amp;ainun.png" 
-             alt="Poster film Habibie dan Ainun menampilkan sosok BJ Habibie bersama Hasri Ainun Besari" 
-             width="640" height="360" loading="lazy">
-        <figcaption>Poster film Habibie &amp; Ainun (2012)</figcaption>
-      </figure>
+        <figure class="kartu">
+          <img src="spiderman.png" alt="Poster film Spider-Man" width="640" height="360" loading="lazy">
+          <figcaption>Poster film Spider-Man: No Way Home (2021)</figcaption>
+        </figure>
 
-      <figure>
-        <img src="thesocialnetwork.png" 
-             alt="Poster film The Social Network menampilkan wajah Mark Zuckerberg dengan kutipan teks tentang sejarah Facebook" 
-             width="640" height="360" loading="lazy">
-        <figcaption>Poster film The Social Network (2010)</figcaption>
-      </figure>
+        <figure class="kartu">
+          <img src="habibie&amp;ainun.png" alt="Poster film Habibie dan Ainun" width="640" height="360" loading="lazy">
+          <figcaption>Poster film Habibie &amp; Ainun (2012)</figcaption>
+        </figure>
 
-      <figure>
-        <img src="ketikacintabertasbih.png" 
-             alt="Poster film Ketika Cinta Bertasbih memperlihatkan para tokoh utama dengan latar suasana Mesir" 
-             width="640" height="360" loading="lazy">
-        <figcaption>Poster film Ketika Cinta Bertasbih (2009)</figcaption>
-      </figure>
+        <figure class="kartu">
+          <img src="thesocialnetwork.png" alt="Poster film The Social Network" width="640" height="360" loading="lazy">
+          <figcaption>Poster film The Social Network (2010)</figcaption>
+        </figure>
 
-      <figure>
-        <img src="sore.png" 
-             alt="Poster film Sore Istri dari Masa Depan memperlihatkan dua karakter utama Jonathan dan Sore" 
-             width="640" height="360" loading="lazy">
-        <figcaption>Poster film Sore: Istri dari Masa Depan (2017)</figcaption>
-      </figure>
+        <figure class="kartu">
+          <img src="ketikacintabertasbih.png" alt="Poster film Ketika Cinta Bertasbih" width="640" height="360"
+            loading="lazy">
+          <figcaption>Poster film Ketika Cinta Bertasbih (2009)</figcaption>
+        </figure>
+
+        <figure class="kartu">
+          <img src="sore.png" alt="Poster film Sore Istri dari Masa Depan" width="640" height="360" loading="lazy">
+          <figcaption>Poster film Sore: Istri dari Masa Depan (2017)</figcaption>
+        </figure>
+
+      </div>
     </section>
 
     <!-- lembar E -->
@@ -139,4 +138,5 @@
   </footer>
 
 </body>
+
 </html>
