@@ -16,6 +16,11 @@
 
   <header>
     <div class="header-baris">
+
+      <!-- Tombol Pengalih Tema -->
+      <input type="checkbox" id="tema" class="pengalih-tema">
+      <label for="tema" class="tombol-tema">Tema gelap</label>
+
       <h1>Daftar Film yang Pernah Saya Tonton</h1>
       <nav aria-label="Navigasi utama">
         <ul>
@@ -112,7 +117,7 @@
     <section id="tambah-film">
       <h2>Tambah Film Baru</h2>
       <form action="/simpan" method="post">
-        
+
         <div class="form-kolom">
           <label for="judul-film">Judul Film</label>
           <input type="text" id="judul-film" name="judul-film" required>
