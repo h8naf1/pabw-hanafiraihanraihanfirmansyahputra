@@ -111,22 +111,25 @@
     <!-- lembar E -->
     <section id="tambah-film">
       <h2>Tambah Film Baru</h2>
-
       <form action="/simpan" method="post">
-        <p>
+        
+        <div class="form-kolom">
           <label for="judul-film">Judul Film</label>
           <input type="text" id="judul-film" name="judul-film" required>
-        </p>
+          <span class="pesan-galat">Judul film harus diisi.</span>
+        </div>
 
-        <p>
+        <div class="form-kolom">
           <label for="tahun-film">Tahun Rilis</label>
           <input type="number" id="tahun-film" name="tahun-film" min="1900" max="2026" required>
-        </p>
+          <span class="pesan-galat">Tahun rilis harus berupa angka antara 1900 - 2026.</span>
+        </div>
 
-        <p>
+        <div class="form-kolom">
           <label for="rating-film">Rating Saya (1–10)</label>
           <input type="number" id="rating-film" name="rating-film" min="1" max="10" step="0.1" required>
-        </p>
+          <span class="pesan-galat">Rating harus antara 1 hingga 10.</span>
+        </div>
 
         <button type="submit">Simpan</button>
       </form>
