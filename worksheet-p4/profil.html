@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Film yang Pernah Saya Tonton</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+
+  <header>
+    <h1>Daftar Film yang Pernah Saya Tonton</h1>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#daftar-film">Daftar Film</a></li>
+        <li><a href="#tambah-film">Tambah Film</a></li>
+        <li><a href="#tentang-saya">Tentang Saya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="daftar-film">
+      <h2>Daftar Film yang Pernah Ditonton</h2>
+
+      <table>
+        <caption>Koleksi film favorit yang pernah saya tonton beserta sutradara dan rating pribadi</caption>
+        <thead>
+          <tr>
+            <th scope="col">Judul</th>
+            <th scope="col">Tahun</th>
+            <th scope="col">Sutradara</th>
+            <th scope="col">Rating Saya</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Spider-Man: No Way Home</th>
+            <td>2021</td>
+            <td>Jon Watts</td>
+            <td>9.2 / 10</td>
+          </tr>
+          <tr>
+            <th scope="row">Habibie &amp; Ainun</th>
+            <td>2012</td>
+            <td>Faozan Rizal</td>
+            <td>8.9 / 10</td>
+          </tr>
+          <tr>
+            <th scope="row">The Social Network</th>
+            <td>2010</td>
+            <td>David Fincher</td>
+            <td>9.0 / 10</td>
+          </tr>
+          <tr>
+            <th scope="row">Ketika Cinta Bertasbih</th>
+            <td>2009</td>
+            <td>Chaerul Umam</td>
+            <td>8.7 / 10</td>
+          </tr>
+          <tr>
+            <th scope="row">Sore: Istri dari Masa Depan</th>
+            <td>2017</td>
+            <td>Yandy Laurens</td>
+            <td>8.8 / 10</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+
+      <figure>
+        <img src="spiderman.png" 
+             alt="Poster film Spider-Man No Way Home memperlihatkan Spider-Man berlatar belakang retakan multiverse" 
+             width="640" height="360" loading="lazy">
+        <figcaption>Poster film Spider-Man: No Way Home (2021)</figcaption>
+      </figure>
+
+      <figure>
+        <img src="habibie&amp;ainun.png" 
+             alt="Poster film Habibie dan Ainun menampilkan sosok BJ Habibie bersama Hasri Ainun Besari" 
+             width="640" height="360" loading="lazy">
+        <figcaption>Poster film Habibie &amp; Ainun (2012)</figcaption>
+      </figure>
+
+      <figure>
+        <img src="thesocialnetwork.png" 
+             alt="Poster film The Social Network menampilkan wajah Mark Zuckerberg dengan kutipan teks tentang sejarah Facebook" 
+             width="640" height="360" loading="lazy">
+        <figcaption>Poster film The Social Network (2010)</figcaption>
+      </figure>
+
+      <figure>
+        <img src="ketikacintabertasbih.png" 
+             alt="Poster film Ketika Cinta Bertasbih memperlihatkan para tokoh utama dengan latar suasana Mesir" 
+             width="640" height="360" loading="lazy">
+        <figcaption>Poster film Ketika Cinta Bertasbih (2009)</figcaption>
+      </figure>
+
+      <figure>
+        <img src="sore.png" 
+             alt="Poster film Sore Istri dari Masa Depan memperlihatkan dua karakter utama Jonathan dan Sore" 
+             width="640" height="360" loading="lazy">
+        <figcaption>Poster film Sore: Istri dari Masa Depan (2017)</figcaption>
+      </figure>
+    </section>
+
+    <!-- lembar E -->
+    <section id="tambah-film">
+      <h2>Tambah Film Baru</h2>
+
+      <form action="/simpan" method="post">
+        <p>
+          <label for="judul-film">Judul Film</label>
+          <input type="text" id="judul-film" name="judul-film" required>
+        </p>
+
+        <p>
+          <label for="tahun-film">Tahun Rilis</label>
+          <input type="number" id="tahun-film" name="tahun-film" min="1900" max="2026" required>
+        </p>
+
+        <p>
+          <label for="rating-film">Rating Saya (1–10)</label>
+          <input type="number" id="rating-film" name="rating-film" min="1" max="10" step="0.1" required>
+        </p>
+
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="tentang-saya">
+    <p>Hanafi Raihan Firmansyah Putra &middot; NIM 25523052 &middot; Kelas C &middot; 2026</p>
+  </footer>
+
+</body>
+</html>
