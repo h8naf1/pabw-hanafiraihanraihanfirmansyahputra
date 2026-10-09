@@ -36,3 +36,23 @@ function buatPerkenalan({ nama, peran }) {
 const formatKeahlian = (daftar) => daftar.join(" · ");
 console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
+
+// Uji buatPerkenalan dengan tiga object berbeda
+console.log(buatPerkenalan(profil));
+console.log(
+  buatPerkenalan({
+    nama: profil.nama,
+    peran: "Mahasiswa yang sedang belajar JavaScript",
+  })
+);
+console.log(
+  buatPerkenalan({
+    nama: profil.nama,
+    peran: "Calon full-stack web developer",
+  })
+);
+
+// Uji formatKeahlian dengan tiga array berbeda
+console.log(formatKeahlian(profil.keahlian));
+console.log(formatKeahlian(["HTML", "CSS"]));
+console.log(formatKeahlian(["JavaScript"]));
