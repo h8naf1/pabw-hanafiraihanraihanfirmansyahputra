@@ -56,3 +56,50 @@ console.log(
 console.log(formatKeahlian(profil.keahlian));
 console.log(formatKeahlian(["HTML", "CSS"]));
 console.log(formatKeahlian(["JavaScript"]));
+
+
+const daftarProyek = [
+  { judul: "Halaman Profil", tahun: 2026, selesai: true },
+  { judul: "Katalog Produk", tahun: 2026, selesai: false },
+];
+
+console.log(profil.nama);
+console.log(daftarProyek[0]);
+console.log(daftarProyek[0].judul);
+console.log(profil["nama"]);
+
+
+// Salinan object
+const salinan = { ...profil };
+
+// Salin array sebelum mengurutkannya
+const urut = [...daftarProyek].sort((a, b) => a.tahun - b.tahun);
+
+// filter untuk menyaring, bukan map
+const proyekKatalog = daftarProyek.filter(
+  (proyek) => proyek.judul === "Katalog Produk"
+);
+
+// Gunakan indeks angka
+console.log(daftarProyek[0]);
+
+
+console.table(profil.keahlian);
+console.table(daftarProyek);
+
+const selesai = daftarProyek.filter((proyek) => proyek.selesai);
+console.table(selesai);
+
+const katalog = daftarProyek.find(
+  (proyek) => proyek.judul === "Katalog Produk"
+);
+console.log(katalog);
+
+const judulProyek = daftarProyek.map((proyek) => proyek.judul);
+console.log(judulProyek);
+
+const jumlahProyekTerhitung = daftarProyek.reduce(
+  (jumlah) => jumlah + 1,
+  0
+);
+console.log(jumlahProyekTerhitung);
