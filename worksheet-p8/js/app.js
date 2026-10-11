@@ -103,3 +103,6 @@ const jumlahProyekTerhitung = daftarProyek.reduce(
   0
 );
 console.log(jumlahProyekTerhitung);
+console.log(namaLengkap);
+console.table(profil.keahlian);
+console.error("Contoh pesan merah untuk latihan E.1");
