@@ -34,3 +34,14 @@ Menggunakan AI sebagai panduan menyusun rencana di README dan struktur HTML sema
 Kriteria selesai saya: mengubah --color-primary di satu baris harus mengubah warna tombol, tautan, judul, dan garis fokus.
 ## Catatan penggunaan AI
 Saya menggunakan AI sebagai teman diskusi untuk menyusun strategi memisahkan token primitif dan semantik, serta untuk membantu memahami perbedaan cara kerja pseudo-class CSS seperti :user-invalid dan penerapan flexbox gap.
+
+## Pertemuan 8 — JavaScript Modern ES6+, Struktur Data, dan Array Methods
+
+- Data profil, keahlian, dan proyek disimpan dalam variabel JavaScript.
+- Membuat fungsi untuk menyusun perkenalan dan memformat daftar keahlian.
+- Menggunakan `map`, `filter`, dan `find` pada data.
+- Memeriksa hasil kode melalui Console dan memperbaiki galat.
+
+### Catatan penggunaan AI — Pertemuan 8
+
+AI membantu menjelaskan konsep JavaScript, memberikan contoh kode, dan menelusuri pesan galat. Saya menentukan data profil, memasukkan dan menyesuaikan kode di proyek, menjalankan halaman melalui server lokal, serta memeriksa hasilnya di browser.
