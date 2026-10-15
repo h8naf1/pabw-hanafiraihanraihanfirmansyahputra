@@ -134,6 +134,7 @@ formFilm.addEventListener("submit", (event) => {
 
 renderProyek();
 
+// render
 wadahFilter.addEventListener("click", (event) => {
   const tombol = event.target.closest("button[data-filter]");
 
