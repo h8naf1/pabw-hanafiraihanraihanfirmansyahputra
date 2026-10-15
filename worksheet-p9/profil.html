@@ -82,17 +82,24 @@
 
       <br>
 
-      <div class="filter-proyek" aria-label="Filter proyek">
-        <button type="button" data-filter="semua" class="aktif">
-          Semua
-        </button>
-        <button type="button" data-filter="selesai">
-          Selesai
-        </button>
-        <button type="button" data-filter="belum-selesai">
-          Belum selesai
-        </button>
-      </div>
+      
+<div class="filter-proyek" aria-label="Filter proyek">
+  <button type="button" data-filter="semua" class="aktif">
+    Semua
+  </button>
+  <button type="button" data-filter="selesai">
+    Selesai
+  </button>
+  <button type="button" data-filter="belum-selesai">
+    Belum selesai
+  </button>
+</div>
+
+<p id="pesan-kosong" hidden>
+  Tidak ada proyek yang sesuai dengan filter ini.
+</p>
+
+
       <div class="katalog">
 
         <figure class="kartu">
@@ -127,7 +134,7 @@
     <!-- lembar E -->
     <section id="tambah-film">
       <h2>Tambah Film Baru</h2>
-      <form action="/simpan" method="post">
+     <form id="form-film" action="/simpan" method="post" novalidate>
 
         <div class="form-kolom">
           <label for="judul-film">Judul Film</label>
@@ -147,7 +154,7 @@
           <span class="pesan-galat">Rating harus antara 1 hingga 10.</span>
         </div>
 
-        <button type="submit">Simpan</button>
+        <button type="submit">Tambah Film</button>
       </form>
     </section>
   </main>
