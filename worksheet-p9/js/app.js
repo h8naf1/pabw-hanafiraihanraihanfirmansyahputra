@@ -58,7 +58,7 @@ console.log(formatKeahlian(["HTML", "CSS"]));
 console.log(formatKeahlian(["JavaScript"]));
 
 
-const daftarProyek = [
+export const daftarProyek = [
   { judul: "Halaman Profil", tahun: 2026, selesai: true },
   { judul: "Katalog Produk", tahun: 2026, selesai: false },
 ];
@@ -105,4 +105,3 @@ const jumlahProyekTerhitung = daftarProyek.reduce(
 console.log(jumlahProyekTerhitung);
 console.log(namaLengkap);
 console.table(profil.keahlian);
-console.error("Contoh pesan merah untuk latihan E.1");
