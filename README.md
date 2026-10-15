@@ -13,16 +13,18 @@ Topik halaman saya: daftar film yang pernah saya tonton.
 - Kolom tabel: Judul, Tahun, Sutradara, Rating Saya
 - Kolom form: Judul Film, Tahun Rilis, Rating Saya
 - Gambar: poster-film.webp
-## Catatan penggunaan AI
+
+### Catatan penggunaan AI
 
 Menggunakan AI sebagai panduan menyusun rencana di README dan struktur HTML semantik. Penulisan dan eksekusi dikerjakan sendiri.
+
 ## Pertemuan 4 — Design token halaman profil
- 
+
 - Berkas gaya yang akan dibuat: tokens.css, base.css, layout.css, komponen.css, tema.css
 - Warna utama: #1D3A8C (biru tua), dipilih karena memberikan kesan profesional, tenang, dan memiliki kontras yang sangat baik dan jelas untuk dibaca.
- 
+
 ### Token yang saya tetapkan
- 
+
 | Token | Nilai | Untuk apa |
 |---|---|---|
 | --color-primary | #1D3A8C | tombol, tautan, penanda |
@@ -30,18 +32,38 @@ Menggunakan AI sebagai panduan menyusun rencana di README dan struktur HTML sema
 | --color-bg | #F8FAFC | latar halaman |
 | --radius-md | 0.5rem | sudut tombol dan kartu |
 | --space-4 | 1rem | jarak standar antar elemen |
- 
+
 Kriteria selesai saya: mengubah --color-primary di satu baris harus mengubah warna tombol, tautan, judul, dan garis fokus.
-## Catatan penggunaan AI
+
+### Catatan penggunaan AI
+
 Saya menggunakan AI sebagai teman diskusi untuk menyusun strategi memisahkan token primitif dan semantik, serta untuk membantu memahami perbedaan cara kerja pseudo-class CSS seperti :user-invalid dan penerapan flexbox gap.
 
 ## Pertemuan 8 — JavaScript Modern ES6+, Struktur Data, dan Array Methods
 
 - Data profil, keahlian, dan proyek disimpan dalam variabel JavaScript.
 - Membuat fungsi untuk menyusun perkenalan dan memformat daftar keahlian.
-- Menggunakan `map`, `filter`, dan `find` pada data.
+- Menggunakan map, filter, dan find pada data.
 - Memeriksa hasil kode melalui Console dan memperbaiki galat.
 
 ### Catatan penggunaan AI — Pertemuan 8
 
 AI membantu menjelaskan konsep JavaScript, memberikan contoh kode, dan menelusuri pesan galat. Saya menentukan data profil, memasukkan dan menyesuaikan kode di proyek, menjalankan halaman melalui server lokal, serta memeriksa hasilnya di browser.
+
+## Pertemuan 9 — DOM, Event, dan Interaktivitas
+
+- Mengakses elemen HTML menggunakan querySelector dan querySelectorAll.
+- Membuat kartu proyek secara dinamis berdasarkan data JavaScript.
+- Mengosongkan container sebelum render ulang agar kartu tidak berlipat.
+- Menerapkan event delegation pada tombol filter menggunakan addEventListener, event.target.closest, dan dataset.
+- Mengatur class aktif pada tombol filter sesuai pilihan pengguna.
+- Menampilkan pesan ketika hasil filter tidak memiliki data.
+- Membuat validasi form tambah film, termasuk pemeriksaan kolom wajib, tahun rilis, dan rating.
+- Menampilkan pesan kesalahan pada kolom yang tidak valid dan mengatur status tombol submit.
+- Memeriksa hasil implementasi menggunakan browser DevTools, Console, dan panel Event Listeners.
+
+### Catatan penggunaan AI — Pertemuan 9
+
+Saya menggunakan AI sebagai panduan belajar untuk memahami konsep DOM, event delegation, rendering data, validasi form, serta menelusuri pesan galat. AI membantu memberikan arahan dan menjelaskan langkah pengujian.
+
+Saya mengerjakan dan menyesuaikan kode sendiri, menjalankan halaman melalui server lokal, serta memeriksa hasil implementasi menggunakan browser DevTools. Pengujian dilakukan untuk memahami perilaku selector, rendering kartu, tombol filter, dan validasi form.
