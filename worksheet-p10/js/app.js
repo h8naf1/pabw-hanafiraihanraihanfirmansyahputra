@@ -1,3 +1,4 @@
+import { fetchNews } from "./api.js";
 // B.1 — Data profil dan tipe nilai
 const namaLengkap = "Hanafi Raihan Firmansyah Putra";
 const peran = "Belajar full-stack web developer";
@@ -105,3 +106,58 @@ const jumlahProyekTerhitung = daftarProyek.reduce(
 console.log(jumlahProyekTerhitung);
 console.log(namaLengkap);
 console.table(profil.keahlian);
+
+// F.2 — Render data API dan empty state
+export function render(list) {
+  const containerAPI = document.querySelector("#list");
+  const statusAPI = document.querySelector("#status-api");
+
+  if (!containerAPI || !statusAPI) {
+    console.error("Elemen #list atau #status-api tidak ditemukan.");
+    return;
+  }
+
+  containerAPI.textContent = "";
+
+  if (list.length === 0) {
+    statusAPI.textContent = "Belum ada data.";
+    return;
+  }
+
+  list.forEach((item) => {
+    const card = document.createElement("article");
+    const heading = document.createElement("h3");
+    const body = document.createElement("p");
+
+    heading.textContent = item.title;
+    body.textContent = item.body;
+
+    card.append(heading, body);
+    containerAPI.appendChild(card);
+  });
+
+  statusAPI.textContent = "Data berhasil dimuat.";
+}
+
+
+async function tampilkanNews() {
+  const containerAPI = document.querySelector("#list");
+  const statusAPI = document.querySelector("#status-api");
+
+  if (!containerAPI || !statusAPI) {
+    console.error("Elemen #list atau #status-api tidak ditemukan.");
+    return;
+  }
+
+  statusAPI.textContent = "Memuat data...";
+
+  try {
+    const data = await fetchNews();
+    render(data);
+  } catch (error) {
+    containerAPI.textContent = "";
+    statusAPI.textContent = "Gagal memuat data: " + error.message;
+  }
+}
+
+tampilkanNews();
