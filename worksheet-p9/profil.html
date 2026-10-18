@@ -82,22 +82,22 @@
 
       <br>
 
-      
-<div class="filter-proyek" aria-label="Filter proyek">
-  <button type="button" data-filter="semua" class="aktif">
-    Semua
-  </button>
-  <button type="button" data-filter="selesai">
-    Selesai
-  </button>
-  <button type="button" data-filter="belum-selesai">
-    Belum selesai
-  </button>
-</div>
 
-<p id="pesan-kosong" hidden>
-  Tidak ada proyek yang sesuai dengan filter ini.
-</p>
+      <div class="filter-proyek" aria-label="Filter proyek">
+        <button type="button" data-filter="semua" class="aktif">
+          Semua
+        </button>
+        <button type="button" data-filter="selesai">
+          Selesai
+        </button>
+        <button type="button" data-filter="belum-selesai">
+          Belum selesai
+        </button>
+      </div>
+
+      <p id="pesan-kosong" hidden>
+        Tidak ada proyek yang sesuai dengan filter ini.
+      </p>
 
 
       <div class="katalog">
@@ -131,10 +131,17 @@
       </div>
     </section>
 
+    <section id="data-api">
+      <h2>Data dari API</h2>
+      <p id="status-api" role="status">Menunggu data...</p>
+      <div id="list"></div>
+    </section>
+
+
     <!-- lembar E -->
     <section id="tambah-film">
       <h2>Tambah Film Baru</h2>
-     <form id="form-film" action="/simpan" method="post" novalidate>
+      <form id="form-film" action="/simpan" method="post" novalidate>
 
         <div class="form-kolom">
           <label for="judul-film">Judul Film</label>
